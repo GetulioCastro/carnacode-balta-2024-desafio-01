@@ -1,12 +1,233 @@
-.flex {
+body, html {
+    height: 100%;
+    margin: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.flex-row {
-    flex-direction: row;
+/* Página index.html */
+
+.container {
+    width: 600px; /* largura desejada */
+    height: 400px; /* altura desejada */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.input-text {
+.header1,
+.header * {
+  box-sizing: border-box;
+  height: 36px;
+  width: auto;
+  position: relative;
+  color: #000000;
+  text-align: center;
+  font-family: var(--ui-30-semi-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--ui-30-semi-font-size, 30px);
+  font-weight: var(--ui-30-semi-font-weight, 600);
+  position: absolute;
+  left: calc(50% - 107.5px);
+  top: 0px;
+}
+
+.input-text{
     background-color: #F6F6F6;
-    border: 2px solid #BDBDBD;
+    border: 1px solid #BDBDBD;
+    height: 50px;
+    width: 343px ;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.btnCalc {
+    border-radius: 25px;
+    width: 100%; /* largura igual à largura da div */
+    height: 50px;
+    background-color: #45FEFE;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: width 0.5s; /* animação de transição */
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.btnEntenda {
+    border-radius: 25px;
+    width: 100%; /* largura igual à largura da div */
+    height: 50px;
+    background-color:white;
+    border-color: #45FEFE;
+    cursor: pointer;
+    transition: width 0.5s; /* animação de transição */
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* Página history.html */
+
+.imc-calc{
+    width: 95px;
+    height: 95px;
+    border: 2px solid #45FEFE; /* Adiciona uma borda preta de 2px */
+    border-radius: 20px;  
+    position: absolute;
+    margin-top: 100px; 
+    top: 5; 
+    left: 50%;
+    transform: translateX(-50%);
+ }
+
+ .feed {
+    color: #000000;
+    text-align: center;
+    font-family: var(--ui-30-semi-font-family, "Inter-SemiBold", sans-serif);
+    font-size: var(--ui-30-semi-font-size, 30px);
+    font-weight: var(--ui-30-semi-font-weight, 600);
+    position: absolute;
+    left: calc(50% - 64.5px);
+    top: 190px;
+  }
+
+.input-search,
+.input-search * {
+  box-sizing: border-box;
+}
+.input-search {
+  height: 50px;
+  position: relative;
+}
+.bg {
+  border-radius: 0px;
+  height: auto;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 180px;
+  height: 100%;
+  overflow: visible;
+}
+.search {
+    color: var(--gray-03, #aca7a7);
+    text-align: left;
+    font-family: var(--ui-16-medium-font-family, "Inter-Medium", sans-serif);
+    font-size: var(--ui-16-medium-font-size, 16px);
+    font-weight: var(--ui-16-medium-font-weight, 500);
+    position: relative;
+    left: 38%;
+    top: 195px;
+}
+
+.content-blocks,
+.content-blocks * {
+  box-sizing: border-box;
+}
+.content-blocks {
+  position: absolute;
+  inset: 0;
+}
+.content-content-block-small {
+  height: 77px;
+  position: absolute;
+  right: 425px;
+  left: 435px;
+  top: 360px;
+}
+.content-block {
+  background: #f6f6f6;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+}
+
+.header {
+  color: #000000;
+  text-align: left;
+  font-family: var(--ui-16-semi-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--ui-16-semi-font-size, 16px);
+  font-weight: var(--ui-16-semi-font-weight, 600);
+  position: absolute;
+  left: 66px;
+  top: 0px;
+}
+
+._8-m-ago {
+  color: #522020;
+  text-align: right;
+  font-family: var(--ui-14-regular-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--ui-14-regular-font-size, 14px);
+  font-weight: var(--ui-14-regular-font-weight, 400);
+  position: absolute;
+  right: 0px;
+  top: 8px;
+}
+.he-ll-want-to-use-your-yacht-and-i-don-t-want-this-thing-smelling-like-fish {
+  color: #000000;
+  text-align: left;
+  font-family: var(--ui-14-regular-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--ui-14-regular-font-size, 14px);
+  font-weight: var(--ui-14-regular-font-weight, 400);
+  position: absolute;
+  right: 8px;
+  left: 66px;
+  top: 29px;
+}
+.divider-line {
+  border-style: solid;
+  border-color: #e8e8e8;
+  border-width: 1px 0 0 0;
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 66px;
+  bottom: 0px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.content-content-block-small2 {
+  height: 77px;
+  position: absolute;
+  right: 425px;
+  left: 435px;
+  top: 435px;
+}
+.content-block2 {
+  background: var(--gray-01, #f6f6f6);
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+._8-m-ago2 {
+  color: var(--gray-03, #bdbdbd);
+  text-align: right;
+  font-family: var(--ui-14-regular-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--ui-14-regular-font-size, 14px);
+  font-weight: var(--ui-14-regular-font-weight, 400);
+  position: absolute;
+  right: 0px;
+  top: 2px;
+}
+.divider-line2 {
+  border-style: solid;
+  border-color: var(--gray-02, #e8e8e8);
+  border-width: 1px 0 0 0;
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 66px;
+  bottom: 0px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
 }

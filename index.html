@@ -1,26 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Getúlio Castro Jr">
     <link rel="stylesheet" href="css/app.css">
-    <title>IMC</title>
+    <title>IMC - Equipe 09</title>
 </head>
 
 <body>
-    <div>ITEM 1</div>
-    <div class="flex flex-column">
-        <div>ITEM 2.1</div>
-        <div>ITEM 2.2</div>
-        <div>ITEM 2.3</div>
+    <div class="container">
+        <div>
+            <div>
+                <h1 class="header1">Cálculo de IMC</h1>
+            </div>
+            <div>
+                <input class="input-text"  type="text" placeholder=" Altura" />
+            </div>
+            <br>
+            <div>
+                <input class="input-text" type="text" placeholder=" Peso" />
+            </div>
+            <br>
+            <div>
+                <input class="input-text" type="text" placeholder=" Sexo" />
+            </div>
+            <br>
+            <div>
+                <br>
+                <input class="input" id="ThirdAge" type="checkbox"/>
+                <label for="ThirdAge"> Eu tenho 65 anos ou mais</label>
+            </div>
+            <br>
+            <button class="btnCalc">Calcular meu IMC</button><br/>
+            <br>
+            <button class="btnEntenda">Entenda o Cálculo</button>
+        </div>
+        
+        <div>
+            <br>
+            <br>
+        </div>
     </div>
-    <div>
-        <input class="input" type="text" />
-    </div>
-    <div>ITEM 4</div>
-    <div>ITEM 5</div>
-    <div>ITEM 6</div>
 </body>
 
 </html>
